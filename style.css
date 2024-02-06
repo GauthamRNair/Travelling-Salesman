@@ -1,0 +1,14 @@
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+}
