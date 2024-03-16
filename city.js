@@ -1,4 +1,5 @@
 import { delay, delayNextInClip, currentDelay } from "./anim.js";
+import { cities } from "./script.js";
 
 class City {
     constructor(x, y, size, color) {
@@ -30,4 +31,10 @@ class City {
     }
 }
 
-export {City}
+function addCity(x, y, citySize, cityColor) {
+    var newCity = new City(x, y, citySize, cityColor);
+    cities.push(newCity);
+    newCity.animCreation(500)
+}
+
+export {City, addCity}
